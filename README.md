@@ -86,6 +86,12 @@ This list was created on Oct. 23, 2023, so some important papers before this dat
 * Learning to Filter Context for Retrieval-Augmented Generation [paper](https://arxiv.org/abs/2311.07989), [code](https://github.com/zorazrw/filco)
 * Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models [paper](https://arxiv.org/abs/2311.09210)
 * Retrieval-Augmented Generation for Large Language Models: A Survey [paper](https://arxiv.org/pdf/2312.10997.pdf)
+* ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation (NeurIPS'25) [paper](https://arxiv.org/abs/2502.15543), [code](https://github.com/OpenBMB/ParamMute)
+    * suppresses knowledge-critical FFNs and adapts the model to favor retrieved evidence when contextual and parametric knowledge conflict
+* SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation [paper](https://arxiv.org/abs/2606.27786), [code](https://github.com/OpenBMB/SPARK)
+    * learns a lightweight policy to adaptively scale FFN contributions at each decoding step while keeping the backbone frozen
+* ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance (EMNLP'25, Oral) [paper](https://aclanthology.org/2025.emnlp-main.963/), [code](https://github.com/NEUIR/ExpandR)
+    * jointly optimizes LLM query expansion and a dense retriever, aligning expansion with retrieval effectiveness and generation consistency
 
 ## Cost saving
 * AutoMix: Automatically Mixing Language Models [paper](https://arxiv.org/abs/2310.12963)
@@ -95,6 +101,8 @@ This list was created on Oct. 23, 2023, so some important papers before this dat
 * SteerLM: Attribute Conditioned SFT as an (User-Steerable) Alternative to RLHF [paper](https://arxiv.org/abs/2310.05344), [model](https://huggingface.co/nvidia/SteerLM-llama2-13B)
     *  aligning LLMs without using RLHF
 * Fine-tuning Language Models for Factuality [paper](https://arxiv.org/abs/2311.08401)
+* Chunks as Arms: Multi-Armed Bandit-Guided Sampling for Long-Context LLM Preference Optimization (ACL'26, Oral) [paper](https://aclanthology.org/2026.acl-long.161/), [code](https://github.com/NEUIR/LongMab-PO)
+    * treats context chunks as bandit arms and uses reward-guided sampling to build diverse responses for long-context direct preference optimization
 
 ## Datasets
 * Proof-Pile-2 dataset: the dataset involves scientific paper, web data containing mathematics, and mathematical code. [link](https://huggingface.co/datasets/EleutherAI/proof-pile-2)
@@ -109,6 +117,8 @@ This list was created on Oct. 23, 2023, so some important papers before this dat
 ## Benchmarks
 * GPQA: A Graduate-Level Google-Proof Q&A Benchmark (very hard questions) (from Cohere, Anthropic, NYU) [paper](https://arxiv.org/pdf/2311.12022.pdf), [data and code](https://github.com/idavidrein/gpqa/), data size: 448
 * GAIA: a benchmark for General AI Assistants (from Meta, Yann LeCun) [paper](https://huggingface.co/papers/2311.12983), [page](https://huggingface.co/gaia-benchmark)
+* Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution [paper](https://arxiv.org/abs/2610.17816), [code](https://github.com/OpenBMB/EC2-Bench), [page](https://passionate11.github.io/ec2-bench-project-page/), data size: 128 tasks
+    * evaluates long-horizon edge-cloud agent collaboration, jointly measuring task performance, cloud cost, and privacy exposure; 100 tasks carry privacy annotations
 
 ## Domain adaptation
 * LLMs for Chip Design [paper](https://arxiv.org/abs/2311.00176) (from NVIDIA)
